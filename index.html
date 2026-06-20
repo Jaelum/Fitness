@@ -1,0 +1,676 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="EM Systems is a certified personal trainer specializing in strength and resistance training, corrective exercise, and post-rehab programming. Available in San Francisco and online."
+    />
+
+    <!-- Always include this line of code!!! -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="img/favicon.png" />
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
+    <script defer src="js/script.js"></script>
+
+    <title>EM Systems &mdash; Strength-Based Personal Training</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo-text">EM Systems</a>
+
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="#how">About</a></li>
+          <li><a class="main-nav-link" href="#programs">Programs</a></li>
+          <li>
+            <a class="main-nav-link" href="#testimonials">Testimonials</a>
+          </li>
+          <li><a class="main-nav-link" href="#pricing">Pricing</a></li>
+          <li>
+            <a class="main-nav-link nav-cta" href="#cta">Start Training</a>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+    </header>
+
+    <main>
+      <section class="section-hero">
+        <div class="hero">
+          <div class="hero-text-box">
+            <h1 class="heading-primary">
+              Strength-Based Training Built Around You
+            </h1>
+            <p class="hero-description">
+              Whether you're chasing weight loss, correcting muscular
+              imbalances, or recovering from injury &mdash; every program is
+              built on proven strength and resistance principles, tailored to
+              where you are and where you want to go. Available in-person in
+              San Francisco or fully online.
+            </p>
+            <a href="#cta" class="btn btn--full margin-right-sm"
+              >Start Training</a
+            >
+
+            <a href="#how" class="btn btn--outline">Learn more &darr;</a>
+            <div class="delivered-meals">
+              <div class="delivered-imgs"></div>
+              <p class="delivered-text">
+                <span>250+</span> clients transformed
+              </p>
+            </div>
+          </div>
+          <div class="hero-img-box">
+            <picture>
+              <source srcset="img/Hero1Full.png" type="image/webp" />
+              <source srcset="img/Hero1Full.png" type="image/png" />
+
+              <img
+                src="img/Hero1Full.png"
+                class="hero-img"
+                alt="Strength training session"
+              />
+            </picture>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-how" id="how">
+        <div class="container">
+          <span class="subheading">How it works</span>
+          <h2 class="heading-secondary">Your transformation starts here</h2>
+        </div>
+
+        <div class="container grid grid--2-cols grid--center-v">
+          <!-- STEP 01 -->
+          <div class="step-text-box">
+            <p class="step-number">01</p>
+            <h3 class="heading-tertiary">Tell us your goals</h3>
+            <p class="step-description">
+              Every client starts with a full assessment &mdash; your movement
+              patterns, history, goals, and any injuries or imbalances. No
+              cookie-cutter programs.
+            </p>
+          </div>
+
+          <div class="step-img-box">
+            <img
+              src="img/app/app-screen-1.png"
+              class="step-img"
+              alt="Fitness assessment screen"
+            />
+          </div>
+
+          <!-- STEP 02 -->
+          <div class="step-img-box">
+            <img
+              src="img/app/app-screen-2.png"
+              class="step-img"
+              alt="Training plan screen"
+            />
+          </div>
+          <div class="step-text-box">
+            <p class="step-number">02</p>
+            <h3 class="heading-tertiary">Get your custom program</h3>
+            <p class="step-description">
+              You receive a fully personalized strength and resistance plan
+              built around your body and your schedule. Includes exercise
+              instructions, progressions, and form cues.
+            </p>
+          </div>
+
+          <!-- STEP 03 -->
+          <div class="step-text-box">
+            <p class="step-number">03</p>
+            <h3 class="heading-tertiary">Train with ongoing support</h3>
+            <p class="step-description">
+              Whether you train in-person in San Francisco or online, you have
+              direct access to your coach. Track progress, swap exercises, and
+              adjust the plan as you improve.
+            </p>
+          </div>
+          <div class="step-img-box">
+            <img
+              src="img/app/app-screen-3.png"
+              class="step-img"
+              alt="Workout tracking screen"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="section-meals" id="programs">
+        <div class="container center-text">
+          <span class="subheading">Training Programs</span>
+          <h2 class="heading-secondary">
+            Specialized programs for every goal
+          </h2>
+        </div>
+
+        <div class="container grid grid--3-cols margin-bottom-md">
+          <div class="meal">
+            <img
+              src="img/meals/program-1.png"
+              class="meal-img"
+              alt="Strength Training"
+            />
+            <div class="meal-content">
+              <div class="meal-tags">
+                <span class="tag tag--strength">Strength</span>
+              </div>
+              <p class="meal-title">Strength &amp; Resistance Training</p>
+              <ul class="meal-attributes">
+                <li class="meal-attribute">
+                  <ion-icon class="meal-icon" name="barbell-outline"></ion-icon>
+                  <span><strong>3-5</strong> sessions/week</span>
+                </li>
+                <li class="meal-attribute">
+                  <ion-icon class="meal-icon" name="time-outline"></ion-icon>
+                  <span><strong>60-90</strong> min sessions</span>
+                </li>
+                <li class="meal-attribute">
+                  <ion-icon class="meal-icon" name="star-outline"></ion-icon>
+                  <span><strong>4.9</strong> rating (312)</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="meal">
+            <img
+              src="img/meals/program-2.png"
+              class="meal-img"
+              alt="Corrective Training"
+            />
+            <div class="meal-content">
+              <div class="meal-tags">
+                <span class="tag tag--corrective">Corrective</span>
+              </div>
+              <p class="meal-title">Corrective &amp; Recovery Training</p>
+              <ul class="meal-attributes">
+                <li class="meal-attribute">
+                  <ion-icon class="meal-icon" name="barbell-outline"></ion-icon>
+                  <span><strong>2-4</strong> sessions/week</span>
+                </li>
+                <li class="meal-attribute">
+                  <ion-icon class="meal-icon" name="time-outline"></ion-icon>
+                  <span><strong>45-60</strong> min sessions</span>
+                </li>
+                <li class="meal-attribute">
+                  <ion-icon class="meal-icon" name="star-outline"></ion-icon>
+                  <span><strong>4.8</strong> rating (178)</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="diets">
+            <h3 class="heading-tertiary">We specialize in:</h3>
+            <ul class="list">
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>Weight Loss</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>Muscular Imbalances</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>Injury Recovery</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>Mobility &amp; Flexibility</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>Athletic Performance</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>Post-Rehab Training</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>Functional Strength</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>Online Coaching</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="container all-recipes">
+          <a href="#" class="link">See all programs &rarr;</a>
+        </div>
+      </section>
+
+      <section class="section-trainer" id="trainer">
+        <div class="container grid grid--2-cols grid--center-v">
+          <div class="trainer-img-box">
+            <!-- placeholder for trainer photo -->
+            <div class="trainer-img-placeholder"></div>
+          </div>
+          <div class="trainer-text-box">
+            <span class="subheading">Your Coach</span>
+            <h2 class="heading-secondary">
+              Training that bridges the gap between the gym and the clinic
+            </h2>
+            <p class="trainer-bio">
+              With a background in certified personal training and a
+              specialization in corrective exercise, the EM Systems approach is
+              built on one principle: strength fixes almost everything. Whether
+              you're working around a past injury, dealing with chronic pain from
+              muscular imbalances, or simply want to move and feel better
+              &mdash; every program starts with understanding how your body
+              actually moves, not how it's supposed to.
+            </p>
+            <p class="trainer-bio trainer-bio--second">
+              Based in San Francisco and working with clients online worldwide,
+              EM Systems combines the precision of corrective exercise with the
+              proven results of progressive resistance training. No fluff, no
+              cookie-cutter plans &mdash; just a program built specifically for
+              you.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-testimonials" id="testimonials">
+        <div class="testimonials-container">
+          <span class="subheading">Testimonials</span>
+          <h2 class="heading-secondary">Real results from real people</h2>
+
+          <div class="testimonials">
+            <figure class="testimonial">
+              <img
+                class="testimonial-img"
+                alt="Photo of client Dave Bryson"
+                src="img/customers/dave.jpg"
+              />
+              <blockquote class="testimonial-text">
+                I came in with a shoulder imbalance that had been bothering me
+                for years. Six months in, it's gone &mdash; and I'm deadlifting
+                more than I ever have. The corrective approach makes all the
+                difference.
+              </blockquote>
+              <p class="testimonial-name">&mdash; Dave Bryson</p>
+            </figure>
+
+            <figure class="testimonial">
+              <img
+                class="testimonial-img"
+                alt="Photo of client Ben Hadley"
+                src="img/customers/ben.jpg"
+              />
+              <blockquote class="testimonial-text">
+                Lost 35 pounds and actually kept it off. What's different here
+                is the program adjusts as you improve. It never feels stale.
+              </blockquote>
+              <p class="testimonial-name">&mdash; Ben Hadley</p>
+            </figure>
+
+            <figure class="testimonial">
+              <img
+                class="testimonial-img"
+                alt="Photo of client Steve Miller"
+                src="img/customers/steve.jpg"
+              />
+              <blockquote class="testimonial-text">
+                Online coaching with EM Systems is as good as in-person. The
+                programming is detailed, the check-ins are consistent, and the
+                results speak for themselves.
+              </blockquote>
+              <p class="testimonial-name">&mdash; Steve Miller</p>
+            </figure>
+
+            <figure class="testimonial">
+              <img
+                class="testimonial-img"
+                alt="Photo of client Hannah Smith"
+                src="img/customers/hannah.jpg"
+              />
+              <blockquote class="testimonial-text">
+                After knee surgery I was nervous about training again. The
+                post-rehab approach here was exactly what I needed &mdash;
+                progressive, careful, and actually effective.
+              </blockquote>
+              <p class="testimonial-name">&mdash; Hannah Smith</p>
+            </figure>
+          </div>
+        </div>
+
+        <div class="gallery">
+          <figure class="gallery-item">
+            <img src="img/gallery/gallery-1.png" alt="Training session photo" />
+          </figure>
+          <figure class="gallery-item">
+            <img src="img/gallery/gallery-2.png" alt="Training session photo" />
+          </figure>
+          <figure class="gallery-item">
+            <img src="img/gallery/gallery-3.png" alt="Training session photo" />
+          </figure>
+          <figure class="gallery-item">
+            <img src="img/gallery/gallery-4.jpg" alt="Training session photo" />
+          </figure>
+          <figure class="gallery-item">
+            <img src="img/gallery/gallery-5.jpg" alt="Training session photo" />
+          </figure>
+          <figure class="gallery-item">
+            <img src="img/gallery/gallery-6.jpg" alt="Training session photo" />
+          </figure>
+          <figure class="gallery-item">
+            <img src="img/gallery/gallery-7.jpg" alt="Training session photo" />
+          </figure>
+          <figure class="gallery-item">
+            <img src="img/gallery/gallery-8.jpg" alt="Training session photo" />
+          </figure>
+          <figure class="gallery-item">
+            <img src="img/gallery/gallery-9.png" alt="Training session photo" />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="img/gallery/gallery-10.jpg"
+              alt="Training session photo"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="img/gallery/gallery-11.jpg"
+              alt="Training session photo"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="img/gallery/gallery-12.jpg"
+              alt="Training session photo"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <section class="section-pricing" id="pricing">
+        <div class="container">
+          <span class="subheading">Pricing</span>
+          <h2 class="heading-secondary">
+            Invest in yourself without breaking the bank
+          </h2>
+        </div>
+
+        <div class="container grid grid--2-cols margin-bottom-md">
+          <div class="pricing-plan pricing-plan--starter">
+            <header class="plan-header">
+              <p class="plan-name">Essential</p>
+              <p class="plan-price"><span>$</span>149</p>
+              <p class="plan-text">per month. That's just $37 per week!</p>
+            </header>
+            <ul class="list">
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>Personalized program</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>Weekly check-ins</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>App access</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>Online or in-person</span>
+              </li>
+            </ul>
+            <div class="plan-sing-up">
+              <a href="#cta" class="btn btn--full">Start training</a>
+            </div>
+          </div>
+
+          <div class="pricing-plan pricing-plan--complete">
+            <header class="plan-header">
+              <p class="plan-name">Premium</p>
+              <p class="plan-price"><span>$</span>249</p>
+              <p class="plan-text">per month. That's just $62 per week!</p>
+            </header>
+            <ul class="list">
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span
+                  ><strong>Everything in Essential</strong> + daily coach
+                  access</span
+                >
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>Form video reviews</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>Monthly program refresh</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>Nutrition guidance</span>
+              </li>
+            </ul>
+            <div class="plan-sing-up">
+              <a href="#cta" class="btn btn--full">Start training</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="container grid">
+          <aside class="plan-details">
+            Prices include all applicable taxes. You can cancel at any time.
+            Both plans include the following:
+          </aside>
+        </div>
+
+        <div class="container grid grid--4-cols">
+          <div class="feature">
+            <ion-icon class="feature-icon" name="fitness-outline"></ion-icon>
+            <p class="feature-title">Expert coaching</p>
+            <p class="feature-text">
+              Work with a certified trainer specializing in strength, resistance,
+              and corrective exercise.
+            </p>
+          </div>
+          <div class="feature">
+            <ion-icon
+              class="feature-icon"
+              name="phone-portrait-outline"
+            ></ion-icon>
+            <p class="feature-title">Mobile app access</p>
+            <p class="feature-text">
+              Access your program anywhere with our easy-to-use mobile app.
+              Track progress and stay on schedule.
+            </p>
+          </div>
+          <div class="feature">
+            <ion-icon class="feature-icon" name="refresh-outline"></ion-icon>
+            <p class="feature-title">Flexible scheduling</p>
+            <p class="feature-text">
+              Train on your schedule &mdash; in-person in San Francisco or fully
+              online. Your program fits your life.
+            </p>
+          </div>
+          <div class="feature">
+            <ion-icon class="feature-icon" name="pause-outline"></ion-icon>
+            <p class="feature-title">Pause anytime</p>
+            <p class="feature-text">
+              Life happens. Pause your membership when needed and we'll refund
+              unused time. No questions asked.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-cta" id="cta">
+        <div class="container">
+          <div class="cta">
+            <div class="cta-text-box">
+              <h2 class="heading-secondary">Get your first session free</h2>
+              <p class="cta-text">
+                Book a complimentary assessment and find out exactly what your
+                body needs. In-person in San Francisco or online &mdash; your
+                first session is on us.
+              </p>
+
+              <form class="cta-form" name="sign-up" netlify>
+                <div>
+                  <label for="full-name">Full Name</label>
+                  <input
+                    id="full-name"
+                    type="text"
+                    placeholder="John Smith"
+                    name="full-name"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label for="email">Email address</label>
+                  <input
+                    id="email"
+                    type="email"
+                    placeholder="me@example.com"
+                    name="email"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label for="select-format">Training Format</label>
+                  <select id="select-format" name="select-format" required>
+                    <option value="">Please choose one option:</option>
+                    <option value="in-person">In-Person</option>
+                    <option value="online">Online</option>
+                    <option value="not-sure">Not Sure Yet</option>
+                  </select>
+                </div>
+
+                <button class="btn btn--form">Book my free session</button>
+              </form>
+            </div>
+            <div
+              class="cta-img-box"
+              role="img"
+              aria-label="Person training"
+            ></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container grid grid--footer">
+        <div class="logo-col">
+          <a href="#" class="footer-logo logo-text">EM Systems</a>
+
+          <ul class="social-links">
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-instagram"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-twitter"></ion-icon
+              ></a>
+            </li>
+          </ul>
+
+          <p class="copyright">
+            Copyright &copy; <span class="year">2027</span> by EM Systems, Inc.
+            All rights reserved.
+          </p>
+        </div>
+
+        <div class="address-col">
+          <p class="footer-heading">Contact us</p>
+          <address class="contacts">
+            <p class="address">
+              623 Harrison St., 2nd Floor, San Francisco, CA 94107
+            </p>
+            <p>
+              <a class="footer-link" href="tel:415-201-6370">415-201-6370</a
+              ><br />
+              <a class="footer-link" href="mailto:hello@emsystems.com"
+                >hello@emsystems.com</a
+              >
+            </p>
+          </address>
+        </div>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Account</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Create account</a></li>
+            <li><a class="footer-link" href="#">Sign in</a></li>
+            <li><a class="footer-link" href="#">iOS app</a></li>
+            <li><a class="footer-link" href="#">Android app</a></li>
+          </ul>
+        </nav>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Company</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">About EM Systems</a></li>
+            <li><a class="footer-link" href="#">For Businesses</a></li>
+            <li><a class="footer-link" href="#">Training Partners</a></li>
+            <li><a class="footer-link" href="#">Careers</a></li>
+          </ul>
+        </nav>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Resources</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Exercise library</a></li>
+            <li><a class="footer-link" href="#">Help center</a></li>
+            <li><a class="footer-link" href="#">Privacy &amp; terms</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
