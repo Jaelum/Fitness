@@ -140,18 +140,18 @@
   width: 100%;
 }
 
-.delivered-meals {
+.client-social-proof {
   display: flex;
   align-items: center;
   gap: 1.6rem;
   margin-top: 8rem;
 }
 
-.delivered-imgs {
+.client-avatars {
   display: flex;
 }
 
-.delivered-imgs img {
+.client-avatars img {
   height: 4.8rem;
   width: 4.8rem;
   border-radius: 50%;
@@ -159,17 +159,17 @@
   border: 3px solid #d8f3dc;
 }
 
-.delivered-imgs img:last-child {
+.client-avatars img:last-child {
   margin: 0;
 }
 
-.delivered-text {
+.social-proof-text {
   font-size: 1.8rem;
   font-weight: 600;
   color: #d8f3dc;
 }
 
-.delivered-text span {
+.social-proof-text span {
   color: #52b788;
   font-weight: 700;
 }
@@ -240,27 +240,27 @@
 /* PROGRAMS SECTION */
 /**************************/
 
-.section-meals {
+.section-programs {
   padding: 9.6rem 0;
 }
 
-.meal {
+.program-card {
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
   border-radius: 11px;
   overflow: hidden;
   transition: all 0.4s;
 }
 
-.meal:hover {
+.program-card:hover {
   transform: translateY(-1.2rem);
   box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
 }
 
-.meal-content {
+.program-content {
   padding: 3.2rem 4.8rem 4.8rem 4.8rem;
 }
 
-.meal-tags {
+.program-tags {
   margin-bottom: 1.2rem;
   display: flex;
   gap: 0.4rem;
@@ -293,38 +293,38 @@
   color: #fff;
 }
 
-.meal-title {
+.program-title {
   font-size: 2.4rem;
   color: #333;
   font-weight: 600;
   margin-bottom: 3.2rem;
 }
 
-.meal-attributes {
+.program-features {
   list-style: none;
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
 
-.meal-attribute {
+.program-feature {
   font-size: 1.8rem;
   display: flex;
   align-items: center;
   gap: 1.6rem;
 }
 
-.meal-icon {
+.program-icon {
   height: 2.4rem;
   width: 2.4rem;
   color: #2d6a4f;
 }
 
-.meal-img {
+.program-img {
   width: 100%;
 }
 
-.all-recipes {
+.program-link {
   text-align: center;
   font-size: 1.8rem;
 }

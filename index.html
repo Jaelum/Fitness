@@ -45,7 +45,7 @@
     <header class="header">
       <a href="#" class="logo-text">EM Systems</a>
 
-      <nav class="main-nav">
+      <nav class="main-nav" id="main-nav">
         <ul class="main-nav-list">
           <li><a class="main-nav-link" href="#how">About</a></li>
           <li><a class="main-nav-link" href="#programs">Programs</a></li>
@@ -59,7 +59,12 @@
         </ul>
       </nav>
 
-      <button class="btn-mobile-nav">
+      <button
+        class="btn-mobile-nav"
+        aria-expanded="false"
+        aria-controls="main-nav"
+        aria-label="Toggle navigation"
+      >
         <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
         <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
       </button>
@@ -84,9 +89,9 @@
             >
 
             <a href="#how" class="btn btn--outline">Learn more &darr;</a>
-            <div class="delivered-meals">
-              <div class="delivered-imgs"></div>
-              <p class="delivered-text">
+            <div class="client-social-proof">
+              <div class="client-avatars"></div>
+              <p class="social-proof-text">
                 <span>250+</span> clients transformed
               </p>
             </div>
@@ -170,7 +175,7 @@
         </div>
       </section>
 
-      <section class="section-meals" id="programs">
+      <section class="section-programs" id="programs">
         <div class="container center-text">
           <span class="subheading">Training Programs</span>
           <h2 class="heading-secondary">
@@ -179,63 +184,81 @@
         </div>
 
         <div class="container grid grid--3-cols margin-bottom-md">
-          <div class="meal">
+          <div class="program-card">
             <img
               src="img/meals/program-1.png"
-              class="meal-img"
+              class="program-img"
               alt="Strength Training"
             />
-            <div class="meal-content">
-              <div class="meal-tags">
+            <div class="program-content">
+              <div class="program-tags">
                 <span class="tag tag--strength">Strength</span>
               </div>
-              <p class="meal-title">Strength &amp; Resistance Training</p>
-              <ul class="meal-attributes">
-                <li class="meal-attribute">
-                  <ion-icon class="meal-icon" name="barbell-outline"></ion-icon>
+              <p class="program-title">Strength &amp; Resistance Training</p>
+              <ul class="program-features">
+                <li class="program-feature">
+                  <ion-icon
+                    class="program-icon"
+                    name="barbell-outline"
+                  ></ion-icon>
                   <span><strong>3-5</strong> sessions/week</span>
                 </li>
-                <li class="meal-attribute">
-                  <ion-icon class="meal-icon" name="time-outline"></ion-icon>
+                <li class="program-feature">
+                  <ion-icon
+                    class="program-icon"
+                    name="time-outline"
+                  ></ion-icon>
                   <span><strong>60-90</strong> min sessions</span>
                 </li>
-                <li class="meal-attribute">
-                  <ion-icon class="meal-icon" name="star-outline"></ion-icon>
+                <li class="program-feature">
+                  <ion-icon
+                    class="program-icon"
+                    name="star-outline"
+                  ></ion-icon>
                   <span><strong>4.9</strong> rating (312)</span>
                 </li>
               </ul>
             </div>
           </div>
 
-          <div class="meal">
+          <div class="program-card">
             <img
               src="img/meals/program-2.png"
-              class="meal-img"
+              class="program-img"
               alt="Corrective Training"
             />
-            <div class="meal-content">
-              <div class="meal-tags">
+            <div class="program-content">
+              <div class="program-tags">
                 <span class="tag tag--corrective">Corrective</span>
               </div>
-              <p class="meal-title">Corrective &amp; Recovery Training</p>
-              <ul class="meal-attributes">
-                <li class="meal-attribute">
-                  <ion-icon class="meal-icon" name="barbell-outline"></ion-icon>
+              <p class="program-title">Corrective &amp; Recovery Training</p>
+              <ul class="program-features">
+                <li class="program-feature">
+                  <ion-icon
+                    class="program-icon"
+                    name="barbell-outline"
+                  ></ion-icon>
                   <span><strong>2-4</strong> sessions/week</span>
                 </li>
-                <li class="meal-attribute">
-                  <ion-icon class="meal-icon" name="time-outline"></ion-icon>
+                <li class="program-feature">
+                  <ion-icon
+                    class="program-icon"
+                    name="time-outline"
+                  ></ion-icon>
                   <span><strong>45-60</strong> min sessions</span>
                 </li>
-                <li class="meal-attribute">
-                  <ion-icon class="meal-icon" name="star-outline"></ion-icon>
+                <li class="program-feature">
+                  <ion-icon
+                    class="program-icon"
+                    name="star-outline"
+                  ></ion-icon>
                   <span><strong>4.8</strong> rating (178)</span>
                 </li>
               </ul>
             </div>
           </div>
 
-          <div class="diets">
+          <div class="specialties">
             <h3 class="heading-tertiary">We specialize in:</h3>
             <ul class="list">
               <li class="list-item">
@@ -274,7 +297,7 @@
           </div>
         </div>
 
-        <div class="container all-recipes">
+        <div class="container program-link">
           <a href="#" class="link">See all programs &rarr;</a>
         </div>
       </section>
