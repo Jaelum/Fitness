@@ -6,7 +6,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #0d1b12;
+  background-color: #52b788;
 
   /* Because we want header to be sticky later */
   height: 9.6rem;
@@ -21,7 +21,7 @@
 .logo-text {
   font-size: 2.4rem;
   font-weight: 700;
-  color: #fff;
+  color: #1b4332;
   text-decoration: none;
   letter-spacing: -0.5px;
 }
@@ -45,7 +45,7 @@
 .main-nav-link:visited {
   display: inline-block;
   text-decoration: none;
-  color: #52b788;
+  color: #1b4332;
   font-weight: 500;
   font-size: 1.8rem;
   transition: all 0.3s;
@@ -53,7 +53,7 @@
 
 .main-nav-link:hover,
 .main-nav-link:active {
-  color: #ffffff;
+  color: #fff;
 }
 
 .main-nav-link.nav-cta:link,
@@ -61,12 +61,12 @@
   padding: 1.2rem 2.4rem;
   border-radius: 9px;
   color: #fff;
-  background-color: #2d6a4f;
+  background-color: #1b4332;
 }
 
 .main-nav-link.nav-cta:hover,
 .main-nav-link.nav-cta:active {
-  background-color: #1b4332;
+  background-color: #0d1b12;
 }
 
 /* MOBILE */
@@ -81,7 +81,7 @@
 .icon-mobile-nav {
   height: 4.8rem;
   width: 4.8rem;
-  color: #333;
+  color: #1b4332;
 }
 
 .icon-mobile-nav[name="close-outline"] {
@@ -97,7 +97,7 @@
   height: 8rem;
   padding-top: 0;
   padding-bottom: 0;
-  background-color: rgba(13, 27, 18, 0.97);
+  background-color: rgba(82, 183, 136, 0.97);
   z-index: 999;
   box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
 }
@@ -111,7 +111,7 @@
 /**************************/
 
 .section-hero {
-  background-color: #0d1b12;
+  background-color: #52b788;
   padding: 4.8rem 0 9.6rem 0;
 }
 
@@ -120,13 +120,17 @@
 }
 
 .hero {
-  max-width: 130rem;
+  max-width: 80rem;
   margin: 0 auto;
   padding: 0 3.2rem;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 9.6rem;
   align-items: center;
+}
+
+.hero-text-box {
+  text-align: center;
 }
 
 .hero-description {
@@ -138,40 +142,6 @@
 
 .hero-img {
   width: 100%;
-}
-
-.client-social-proof {
-  display: flex;
-  align-items: center;
-  gap: 1.6rem;
-  margin-top: 8rem;
-}
-
-.client-avatars {
-  display: flex;
-}
-
-.client-avatars img {
-  height: 4.8rem;
-  width: 4.8rem;
-  border-radius: 50%;
-  margin-right: -1.6rem;
-  border: 3px solid #d8f3dc;
-}
-
-.client-avatars img:last-child {
-  margin: 0;
-}
-
-.social-proof-text {
-  font-size: 1.8rem;
-  font-weight: 600;
-  color: #d8f3dc;
-}
-
-.social-proof-text span {
-  color: #52b788;
-  font-weight: 700;
 }
 
 /**************************/
@@ -196,44 +166,15 @@
 
 .step-img-box {
   position: relative;
-
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.step-img-box::before,
-.step-img-box::after {
-  content: "";
-  display: block;
-  border-radius: 50%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.step-img-box::before {
-  width: 60%;
-  /* height: 60%; */
-
-  /* 60% of parent's width */
-  padding-bottom: 60%;
-
-  background-color: #d8f3dc;
-  z-index: -2;
-}
-
-.step-img-box::after {
-  width: 45%;
-  padding-bottom: 45%;
-  background-color: #d8f3dc;
-  z-index: -1;
-}
-
-.step-img {
-  width: 35%;
-  /* z-index: 10; */
+.section-how .grid--2-cols {
+  grid-template-columns: 1fr;
+  max-width: 70rem;
+  margin: 0 auto;
 }
 
 /**************************/
@@ -320,10 +261,6 @@
   color: #2d6a4f;
 }
 
-.program-img {
-  width: 100%;
-}
-
 .program-link {
   text-align: center;
   font-size: 1.8rem;
@@ -341,9 +278,9 @@
 .trainer-img-placeholder {
   width: 100%;
   padding-bottom: 100%;
-  background-color: #52b788;
+  background-color: #40916c;
   border-radius: 11px;
-  opacity: 0.3;
+  opacity: 0.4;
 }
 
 .trainer-text-box {
@@ -367,13 +304,12 @@
 
 .section-testimonials {
   background-color: #d8f3dc;
-  display: grid;
-  grid-template-columns: 55fr 45fr;
-  align-items: center;
+  padding: 9.6rem;
 }
 
 .testimonials-container {
-  padding: 9.6rem;
+  max-width: 120rem;
+  margin: 0 auto;
 }
 
 .testimonials {
@@ -381,12 +317,6 @@
   grid-template-columns: 1fr 1fr;
   row-gap: 4.8rem;
   column-gap: 8rem;
-}
-
-.testimonial-img {
-  width: 6.4rem;
-  border-radius: 50%;
-  margin-bottom: 1.2rem;
 }
 
 .testimonial-text {
@@ -400,27 +330,6 @@
   color: #6f6f6f;
 }
 
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.6rem;
-  padding: 1.6rem;
-}
-
-.gallery-item {
-  overflow: hidden;
-}
-
-.gallery-item img {
-  display: block;
-  width: 100%;
-  transition: all 0.4s;
-}
-
-.gallery-item img:hover {
-  transform: scale(1.1);
-}
-
 /**************************/
 /* PRICING SECTION */
 /**************************/
@@ -431,7 +340,6 @@
 
 .pricing-plan {
   border-radius: 11px;
-
   width: 75%;
 }
 
@@ -534,9 +442,6 @@
 /**************************/
 
 .section-cta {
-  /* top / right / bottom / left */
-  /* padding: 9.6rem 0 12.8rem 0; */
-
   /* top / horizontal / left */
   padding: 4.8rem 0 12.8rem;
 }
@@ -547,7 +452,6 @@
   grid-template-columns: 2fr 1fr;
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
   border-radius: 11px;
-
   background-image: linear-gradient(to right bottom, #52b788, #2d6a4f);
   overflow: hidden;
 }
@@ -569,15 +473,7 @@
 }
 
 .cta-img-box {
-  background-image:
-    linear-gradient(
-      to right bottom,
-      rgba(82, 183, 136, 0.35),
-      rgba(45, 106, 79, 0.35)
-    ),
-    url("../img/workout.jpg");
-  background-size: cover;
-  background-position: center;
+  background-color: #40916c;
 }
 
 .cta-form {
